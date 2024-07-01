@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas Online</title>
+    <style>
+        /* Estilos CSS podem ser adicionados aqui */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .product {
+            float: left;
+            width: 30%;
+            margin: 20px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 0.9em;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Roupas Online</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Mulher</a>
+        <a href="#">Homem</a>
+        <a href="#">Criança</a>
+        <a href="#">Contato</a>
+    </nav>
+    <div class="container">
+        <div class="product">
+            <img src="roupa1.jpg" alt="Blusa">
+            <h3>Blusa Floral</h3>
+            <p>R$ 49,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="roupa2.jpg" alt="Calça">
+            <h3>Calça Jeans</h3>
+            <p>R$ 89,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="roupa3.jpg" alt="Vestido">
+            <h3>Vestido de Verão</h3>
+            <p>R$ 129,99</p>
+            <button>Comprar</button>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Loja de Roupas Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
