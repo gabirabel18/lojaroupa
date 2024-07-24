@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -23,13 +23,45 @@
             padding: 10px 0;
             text-align: center;
         }
-        nav a {
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
+            padding: 10px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        nav ul li a:hover, nav ul li:hover > a {
+            background-color: #555;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+        }
+        nav ul ul li {
+            display: block;
+            width: 150px;
+        }
+        nav ul ul li a {
+            margin: 0;
+            padding: 10px;
+        }
+        nav ul ul li a:hover {
+            background-color: #555;
+        }
+        nav ul li:hover > ul {
+            display: block;
         }
         .container {
             width: 80%;
@@ -71,11 +103,31 @@
         <h1>Loja de Roupas Online</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Mulher</a>
-        <a href="#">Homem</a>
-        <a href="#">Criança</a>
-        <a href="#">Contato</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Mulher</a>
+                <ul>
+                    <li><a href="#">Vestidos</a></li>
+                    <li><a href="#">Blusas</a></li>
+                    <li><a href="#">Calças</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Homem</a>
+                <ul>
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Calças</a></li>
+                    <li><a href="#">Bermudas</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Criança</a>
+                <ul>
+                    <li><a href="#">Meninos</a></li>
+                    <li><a href="#">Meninas</a></li>
+                    <li><a href="#">Bebês</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+        </ul>
     </nav>
     <div class="container">
         <div class="product">
